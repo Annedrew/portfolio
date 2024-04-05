@@ -1,11 +1,11 @@
-# Quick Start
+## Quick Start
 - Run the project locally
 ```
 npm run dev
 ```
-# Extentions
+## Extentions
 - Tailwind CSS IntelliSense
 - ES7+ React/Redux/React-Native snippets
 
-# Note
+## Note
 - Change image resources under `public` folder
