@@ -1,9 +1,6 @@
 "use client"
-import { links } from '@/lib/data';
+import type { SectionName } from '@/lib/type';
 import React, { useContext, useState, createContext } from 'react';
-
-// number is used as an index to access elements in the links array. 
-type SectionName = typeof links[number]["name"]; 
 
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
