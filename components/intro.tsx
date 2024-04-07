@@ -7,9 +7,11 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section ref={ref} className="mb-28 max-w-[50rem] scroll-mt-28" id="home">
@@ -70,6 +72,10 @@ export default function Intro() {
         }}
       >
         <Link
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
           href="#contact"
           className="group text-black px-7 py-3 flex items-center gap-2 focus:scale-110 rounded-full hover:scale-110 active:scale-105 transition"
         >
@@ -77,17 +83,25 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-4 transition" />
         </Link>
         <a
-          className="group bg-white text-black px-7 py-3 flex items-center gap-2 focus:scale-110 rounded-full hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          className="group bg-white text-black px-7 py-3 flex items-center gap-2 focus:scale-110 rounded-full hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
           href="/CV.pdf"
           download={true}
         >
           Download CV{" "}
           <HiDownload className="opacity-70 group-hover:translate-x-1 transition" />{" "}
         </a>
-        <a className="group bg-white text-black px-7 py-3 flex items-center gap-2 focus:scale-[1.15] rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10" href="https://www.linkedin.com/in/ning-an-262960224/" target="_blank">
+        <a
+          className="group bg-white text-black px-7 py-3 flex items-center gap-2 focus:scale-[1.15] rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+          href="https://www.linkedin.com/in/ning-an-262960224/"
+          target="_blank"
+        >
           <BsLinkedin />
         </a>
-        <a className="group bg-white text-black px-7 py-3 flex items-center gap-2 focus:scale-[1.15] rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10" href="https://github.com/annedrew" target="_blank">
+        <a
+          className="group bg-white text-black px-7 py-3 flex items-center gap-2 focus:scale-[1.15] rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+          href="https://github.com/annedrew"
+          target="_blank"
+        >
           <FaGithubSquare />
         </a>
       </motion.div>
