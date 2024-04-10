@@ -9,3 +9,4 @@ npm run dev
 
 ## Note
 - Change image resources under `public` folder
+- Resend account using github
