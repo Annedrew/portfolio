@@ -56,11 +56,7 @@ export default function Intro() {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
       >
-        Hello, I'm <span className="font-bold">Ning.</span> I'm a{"  "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">1 years</span> of experience. I enjoy
-        building websites. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        Hello, I'm <span className="font-bold">Ning.</span> I'm a <span className="font-bold">full-stack developer.</span> I enjoy  writing elegant code and building websites. My focus is <span className="underline">React and Next.js</span>.
       </motion.p>
 
       <motion.div
@@ -79,7 +75,7 @@ export default function Intro() {
           href="#contact"
           className="group text-black px-7 py-3 flex items-center gap-2 focus:scale-110 rounded-full hover:scale-110 active:scale-105 transition"
         >
-          Contact me here{" "}
+          Contact me here
           <BsArrowRight className="opacity-70 group-hover:translate-x-4 transition" />
         </Link>
         <a
@@ -87,8 +83,8 @@ export default function Intro() {
           href="/CV.pdf"
           download={true}
         >
-          Download CV{" "}
-          <HiDownload className="opacity-70 group-hover:translate-x-1 transition" />{" "}
+          Download CV
+          <HiDownload className="opacity-70 group-hover:translate-x-1 transition" />
         </a>
         <a
           className="group bg-white text-black px-7 py-3 flex items-center gap-2 focus:scale-[1.15] rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
