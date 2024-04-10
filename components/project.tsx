@@ -4,7 +4,7 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[0];
+type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({title, description, tags, imageUrl}: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
