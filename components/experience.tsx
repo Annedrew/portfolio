@@ -38,12 +38,11 @@ export default function Experience() {
               }}
             >
               <h3
-                style={{ color: "blue" }}
                 className="font-semibold capitalize"
               >
                 {experience.title}
               </h3>
-              <p className="font-normal !mt-0">{experience.location}</p>
+              <p className="font-normal text-gray-400 !mt-0">{experience.location}</p>
               <p className="font-normal !mt-1 text-gray-700">
                 {experience.description}
               </p>

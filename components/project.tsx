@@ -3,10 +3,16 @@ import React, { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Iframe from "react-iframe";
 
 type ProjectProps = (typeof projectsData)[number];
 
-export default function Project({title, description, tags, imageUrl}: ProjectProps) {
+export default function Project({
+  title,
+  description,
+  tags,
+  imageUrl,
+}: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -37,7 +43,18 @@ export default function Project({title, description, tags, imageUrl}: ProjectPro
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+          <li>
+            {/* <Iframe
+              url="https://www.bilibili.com/video/BV1Rx411m7GR/?spm_id_from=333.999.0.0&vd_source=d6632c725b413afc63537bf3348021a3"
+              width="640px"
+              height="320px"
+              id=""
+              className=""
+              display="block"
+              position="relative"
+            /> */}
+          </li>
+          {/* <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase trackiing-wider text-white rounded-full"
@@ -46,9 +63,10 @@ export default function Project({title, description, tags, imageUrl}: ProjectPro
                 {tag}
               </li>
             ))}
-          </ul>
+          </ul> */}
         </div>
-        <Image
+
+        {/* <Image
           src={imageUrl}
           alt="Project I worked on."
           quality={95}
@@ -65,7 +83,7 @@ export default function Project({title, description, tags, imageUrl}: ProjectPro
 
         group-even:right=[initial] 
         group-even:-left-40"
-        />
+        /> */}
       </section>
     </motion.div>
   );

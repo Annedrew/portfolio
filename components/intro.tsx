@@ -8,6 +8,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -56,7 +57,21 @@ export default function Intro() {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
       >
-        Hello, I&apos;m <span className="font-bold">Ning.</span> I&apos;m a <span className="font-bold">full-stack developer.</span> I enjoy  writing elegant code and building websites. My focus is <span className="underline">React and Next.js</span>.
+        Hello, I&apos;m <span className="font-bold">Ning!
+        <br />
+        <br />
+        <TypeAnimation
+          sequence={["Web Developer", 1000, "Full Stack Developer", 1000]}
+          wrapper="span"
+          cursor={true}
+          repeat={Infinity}
+          style={{ fontSize: "2em", display: "inline-block" }}
+        />
+        <br />
+        <br />
+        </span>I enjoy writing elegant code and building websites.
+        <br />
+        My focus is <span className="underline">React, Next.js and Python</span>.
       </motion.p>
 
       <motion.div

@@ -20,15 +20,15 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body className={`${inter.className} pt-28 bg-gray-50 text-gray-950`}>
         <div
-          className="bg-[#fbe2e3] 
+          className="bg-[#facdcf] 
                         absolute 
                         -z-10
                         top-[-6rem] 
-                        right-[11rem] 
-                        h-[31.25rem] 
-                        w-[31.25rem] 
+                        right-[-11rem] 
+                        h-[30rem] 
+                        w-[35rem] 
                         rounded-full 
-                        blur-[10rem] 
+                        blur-[8rem] 
                         sm:w-[68.75rem]"
         />
         <div
@@ -36,11 +36,11 @@ export default function RootLayout({
                         absolute 
                         -z-10
                         top-[-1rem] 
-                        left-[-35rem] 
-                        h-[31.25rem] 
-                        w-[50rem] 
+                        left-[-30rem] 
+                        h-[30rem] 
+                        w-[35rem] 
                         rounded-full 
-                        blur-[10rem] 
+                        blur-[8rem] 
                         sm:w-[68.75rem]
                         md:left-[-33rem]
                         lg:left-[-28rem]
