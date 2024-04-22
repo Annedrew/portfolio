@@ -40,49 +40,81 @@ export const links = [
 export const experiencesData = [
   {
     title: "Full Stack Intern",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    location: "Copenhagen, Denmark",
+    description:[
+      "💼",
+      "Joined an interesting project that allows study and explore and design."
+    ],
     icon: React.createElement(LuGraduationCap),
     date: "2024.01 - now",
   },
   {
-    title: "Student",
-    location: "Aalborg, DK",
+    title: "Explorer",
+    location: "Aalborg, Denmark",
+    description: [
+      "🧑‍💻",
+      "I have been working on my own projects and study about Kubernetes and AWS cloud. Trying to get a full-time job and think about my career.",
+      "🌍",
+      "Traveled to different cities in China.",
+      "🍣",
+      "Worked in a Sushi restaurant."
+    ],
+    icon: React.createElement(CgWorkAlt),
+    date: "2023.07 - 2024.01",
+  },
+  {
+    title: "Master Student",
+    location: "Aalborg, Denmark",
     description:
-      "I studied as a master student on computer science for 2 years in Aalborg University.",
+    [
+      "🧑‍🎓",
+      "I studied as a master student on computer science for 2 years in Aalborg University. Learning how to collaborate with student from different countries.",
+      "🌍",
+      "Traveled to many countries in Europe."
+    ],
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2023",
   },
   {
-    title: "Student",
-    location: "Aalborg, DK",
-    description:
-      "I studied as a master student on computer science for 2 years in Aalborg University.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2023",
-  },
-  {
-    title: "Writer",
-    location: "Heibei, CN",
-    description:
-      "I wrote a series of storybooks for children and it is published in China.",
+    title: "Learner & Writer",
+    location: "China",
+    description:[
+      "📑",
+      "To further study computer science and experience a different life, I resigned from my job and prepared for master's degree exams and applications.",
+      "📖",
+      "In the meantime, I got an opportunity to write a series of children's books. I worked on the book, and it is published and sold in China.",
+      "🌍",
+      "Traveled to different cities in China.",
+    ],
     icon: React.createElement(FaReact),
     date: "2020 - 2021",
   },
   {
     title: "System Test Engineer",
-    location: "Wuhan, CN",
-    description:
-      "I wrote a series of storybooks for children.",
+    location: "China",
+    description:[
+      "💼",
+      "Responsible for the testing of spreadsheet of WPS Office. ",
+      "Developed automated script to improve work efficiency. "
+    ],
     icon: React.createElement(FaReact),
-    date: "2017 - 2019",
+    date: "2018 - 2019",
   },
   {
-    title: "Bachelor Student",
-    location: "Zhuhai, CN",
-    description:
-      "I wrote a series of storybooks for children.",
+    title: "Bachelor Journey",
+    location: "China",
+    description: [
+      "💼",
+      "The last year of my university was spent on internship.",
+      "In Kingsoft Office Software Corporation Limited , I was a System Test Engineer intern.",
+      "In YGsoft, I was a Security Test Engineer intern.",
+      "🎮",
+      "At the third year of university study, with other 4 students as a team, we cooperated with a game company to develop a mobile game.",
+      "💬",
+      "I enjoy working with self-media operations. As a member of the university employment association, I am responsible for managing the university's official self-media account.",
+      "🛼 · ",
+      "I am passionate about roller skating. Alongside a group of like-minded friends, we traversed nearly every street in Zhuhai city."
+    ],
     icon: React.createElement(FaReact),
     date: "2014 - 2018",
   },

@@ -19,5 +19,5 @@ export default function Home() {
       <Experience />
       <Contact />
     </main>
-  )
+  );
 }

@@ -43,9 +43,12 @@ export default function Experience() {
                 {experience.title}
               </h3>
               <p className="font-normal text-gray-400 !mt-0">{experience.location}</p>
-              <p className="font-normal !mt-1 text-gray-700">
-                {experience.description}
-              </p>
+              {Array.isArray(experience.description) ? 
+                experience.description.map((des, index) => (
+                  <p className="font-normal !mt-1 text-gray-700" key={index}>{des}</p>
+                )) : 
+                <p className="font-normal !mt-1 text-gray-700">{experience.description}</p>
+              }
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
