@@ -61,7 +61,7 @@ export default function Intro() {
         <br />
         <br />
         <TypeAnimation
-          sequence={["Web Developer", 1000, "Full Stack Developer", 1000]}
+          sequence={["Web Developer", 1000, "Full Stack Developer", 1000, "Software Developer", 1000]}
           wrapper="span"
           cursor={true}
           repeat={Infinity}

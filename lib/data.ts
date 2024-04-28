@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import wujigo from "@/public/wujigo.png";
+import senpage from "@/public/senpage.png";
+import admin from "@/public/admin.png";
 
 export const links = [
   {
@@ -41,7 +41,7 @@ export const experiencesData = [
   {
     title: "Full Stack Intern",
     location: "Copenhagen, Denmark",
-    description:[
+    description: [
       "💼",
       "Joined an interesting project that allows study and explore and design."
     ],
@@ -63,22 +63,22 @@ export const experiencesData = [
     date: "2023.07 - 2024.01",
   },
   {
-    title: "Master Student",
+    title: "Master Journey",
     location: "Aalborg, Denmark",
     description:
-    [
-      "🧑‍🎓",
-      "I studied as a master student on computer science for 2 years in Aalborg University. Learning how to collaborate with student from different countries.",
-      "🌍",
-      "Traveled to many countries in Europe."
-    ],
+      [
+        "🧑‍🎓",
+        "I studied as a master student on computer science for 2 years in Aalborg University. Learning how to collaborate with student from different countries.",
+        "🌍",
+        "Traveled to many countries in Europe."
+      ],
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2023",
   },
   {
     title: "Learner & Writer",
     location: "China",
-    description:[
+    description: [
       "📑",
       "To further study computer science and experience a different life, I resigned from my job and prepared for master's degree exams and applications.",
       "📖",
@@ -92,7 +92,7 @@ export const experiencesData = [
   {
     title: "System Test Engineer",
     location: "China",
-    description:[
+    description: [
       "💼",
       "Responsible for the testing of spreadsheet of WPS Office. ",
       "Developed automated script to improve work efficiency. "
@@ -122,42 +122,41 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Senpage ",
+    description:
+      "Senpage in-house website.",
+    tags: ["React", "Next.js", "RESTful API", "Ruby on rails", "PostgreSQL", "Bootstrap"],
+    imageUrl: senpage,
+  },
+  {
+    title: "Admin",
+    description:
+      "Full stack websites, with coffee client-facing coffee shop website and backend management system.",
+    tags: ["React", "Next.js", "Node.js", "Express.js", "MongoDB", "CSS"],
+    imageUrl: admin,
+  },
+  {
     title: "Wuji Go",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-    videoUrl: "https://www.bilibili.com/video/BV1Rx411m7GR/?spm_id_from=333.999.0.0&vd_source=d6632c725b413afc63537bf3348021a3"
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A competitive 3-level game optimized for both Android and iOS platforms.",
+    tags: ["C#", "Unity 3D", "Git", "Visual Studio"],
+    imageUrl: wujigo,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
+  "JavaScript",
+  "HTML",
+  "CSS",
   "Tailwind",
+  "Python",
+  "Node.js",
+  "TypeScript",
+  "Git",
   "MongoDB",
   "Express",
   "PostgreSQL",
-  "Python",
   "Django",
 ] as const;
