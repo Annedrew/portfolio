@@ -124,14 +124,14 @@ export const projectsData = [
   {
     title: "Senpage ",
     description:
-      "Senpage in-house website.",
+      "A website that can manage projects, teams and users with different permissions.",
     tags: ["React", "Next.js", "RESTful API", "Ruby on rails", "PostgreSQL", "Bootstrap"],
     imageUrl: senpage,
   },
   {
     title: "Admin",
     description:
-      "Full stack websites, with coffee client-facing coffee shop website and backend management system.",
+      "Full stack websites, with client-facing coffee shop website and backend management system.",
     tags: ["React", "Next.js", "Node.js", "Express.js", "MongoDB", "CSS"],
     imageUrl: admin,
   },

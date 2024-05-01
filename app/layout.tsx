@@ -20,11 +20,11 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body className={`${inter.className} pt-28 bg-gray-50 text-gray-950`}>
         <div
-          className="bg-[#facdcf] 
-                        absolute 
+          className="bg-[#facdcf]
+                        absolute
                         -z-10
-                        top-[-6rem] 
-                        right-[-11rem] 
+                        top-[-6rem]
+                        left-[21rem]
                         h-[30rem] 
                         w-[35rem] 
                         rounded-full 
